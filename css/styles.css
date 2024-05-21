@@ -107,7 +107,6 @@
 	--color-1: hsla(35, 87%, 49%, 1);
 	--color-2: hsla(127, 8%, 22%, 1);
 	--color-3: hsla(39, 93%, 95%, 1);
-	--color-4: hsla(186, 7%, 54%, 1);
 
   /* theme color variations
    */
@@ -2234,6 +2233,7 @@ input[type=button].btn--primary:hover {
 button.u-fullwidth {
 	width       : 100%;
 	margin-right: 0;
+}
 
 .btn--small,
 button.btn--small {
@@ -2242,16 +2242,14 @@ button.btn--small {
 
 .btn--medium,
 button.btn--medium {
-	--btn-height: calc((var(--vspace-btn) + .8rem);
-
+	--btn-height: calc(var(--vspace-btn) + .8rem);
 }
 
 .btn--large,
 button.btn--large {
 	--btn-height: calc(var(--vspace-btn) + 1.6rem);
-	
 }
-	
+
 .btn--stroke,
 button.btn--stroke {
 	background: transparent !important;
