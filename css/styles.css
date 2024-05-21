@@ -2234,11 +2234,6 @@ input[type=button].btn--primary:hover {
 button.u-fullwidth {
 	width       : 100%;
 	margin-right: 0;
-}
-
-:root {
-	--btn-width: 10rem;
-}
 
 .btn--small,
 button.btn--small {
@@ -2247,8 +2242,8 @@ button.btn--small {
 
 .btn--medium,
 button.btn--medium {
-	--btn-height: calc((var(--vspace-btn) + .8rem) * 2);
-	width: calc(var(--btn-width + 2rem);
+	--btn-height: calc((var(--vspace-btn) + .8rem);
+
 }
 
 .btn--large,
