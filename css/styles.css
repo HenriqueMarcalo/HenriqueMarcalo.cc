@@ -2236,6 +2236,10 @@ button.u-fullwidth {
 	margin-right: 0;
 }
 
+:root {
+	--btn-width: 10rem;
+}
+
 .btn--small,
 button.btn--small {
 	--btn-height: calc(var(--vspace-btn) - 1.6rem);
@@ -2244,11 +2248,13 @@ button.btn--small {
 .btn--medium,
 button.btn--medium {
 	--btn-height: calc((var(--vspace-btn) + .8rem) * 2);
+	width: calc(var(--btn-width + 2rem);
 }
 
 .btn--large,
 button.btn--large {
 	--btn-height: calc(var(--vspace-btn) + 1.6rem);
+	
 }
 	
 .btn--stroke,
