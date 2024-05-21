@@ -2243,18 +2243,12 @@ button.btn--small {
 
 .btn--medium,
 button.btn--medium {
-	--btn-height: calc(var(--vspace-btn) + .8rem);
+	--btn-height: calc((var(--vspace-btn) + .8rem) * 2);
 }
 
 .btn--large,
 button.btn--large {
 	--btn-height: calc(var(--vspace-btn) + 1.6rem);
-}
-
-.btn--normal {
-    padding: 20px 40px; /* Ajuste o padding para aumentar o tamanho do botão */
-    font-size: 18px;    /* Ajuste o tamanho da fonte conforme necessário */
-    border-radius: 5px; /* Ajuste o border-radius se necessário */
 }
 	
 .btn--stroke,
