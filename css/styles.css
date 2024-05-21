@@ -2251,6 +2251,12 @@ button.btn--large {
 	--btn-height: calc(var(--vspace-btn) + 1.6rem);
 }
 
+.btn--large {
+    padding: 20px 40px; /* Ajuste o padding para aumentar o tamanho do botão */
+    font-size: 18px;    /* Ajuste o tamanho da fonte conforme necessário */
+    border-radius: 5px; /* Ajuste o border-radius se necessário */
+}
+	
 .btn--stroke,
 button.btn--stroke {
 	background: transparent !important;
