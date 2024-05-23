@@ -182,7 +182,7 @@
 
             <!-- clients
             ----------------------------------------------- -->
-           <section id="clients" class="s-clients">          
+          <section id="clients" class="s-clients">          
 
     <div class="row s-clients__content-block width-sixteen-col">
         <div class="column xl-12 grid-block grid-section-split">
@@ -195,9 +195,9 @@
         
             <div class="grid-section-split__primary" style="text-align: center;">
                 <div class="button-container">
-                    <a href="https://example.com/page1" class="btn btn-large">Projects</a>
-                    <a href="https://example.com/page2" class="btn btn-large">Currently Working on</a>
-                    <a href="https://example.com/page3" class="btn btn-large">Application letter</a>
+                    <a href="https://example.com/page1" class="btn btn-large">Button 1</a>
+                    <a href="https://example.com/page2" class="btn btn-large">Button 2</a>
+                    <a href="https://example.com/page3" class="btn btn-large">Button 3</a>
                 </div>
             </div> <!-- end grid-section-split__primary -->
         
@@ -220,8 +220,9 @@
         border: none;
         border-radius: 5px;
         cursor: pointer;
-        width: 100%; /* Make buttons take full width */
-        max-width: 200px; /* Limit maximum width */
+        width: auto; /* Allow buttons to expand to fit content */
+        min-width: 200px; /* Minimum width for buttons */
+        max-width: 300px; /* Maximum width for buttons */
         text-decoration: none; /* Remove default underline */
         display: inline-block; /* Ensure buttons are displayed inline */
         text-align: center; /* Center text horizontally */
