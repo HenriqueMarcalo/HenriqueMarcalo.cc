@@ -96,127 +96,171 @@
                         </div>
                     </div>
                </section>   
+<style>
+        .grid-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-               <section class="s-pagecontent pagecontent">
+        .grid-row {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 20px;
+        }
 
-                     <div class="grid-full grid-list-items list-items show-ctr">
-            <div class="grid-list-items__item list-items__item">
-             <div class="grid-items__item-header">
-              <h3 class="blog-card__title">What is Nario&Debes?</a></h3>
-                  </div>
-                       <div class="blog-card__text">
-                                    <p>
-                                      </div>
-                                        <div class="blog-card__text">
-                                            <p>
-                            Nario&Debes is an upcoming open world game being developed by me and two other people, during our free time.
-                            Set foot in the realm of Firecrest taking the role of Nario, our brave and bold protagonist, as you uncover the
-                            secrets of this mysterious island in search of the mighty dragon Debes.
-                                        </p>
+        .grid-row.centered {
+            justify-content: center;
+        }
+
+        .grid-item {
+            flex: 1;
+            margin: 0 10px;
+        }
+
+        .blog-card {
+            border: 1px solid #ccc;
+            padding: 20px;
+            background: #fff;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 1200px) {
+            .grid-item {
+                flex: 1 1 30%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .grid-row {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .grid-item {
+                width: 100%;
+                margin: 10px 0;
+            }
+
+            .grid-row.centered {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="s-content">
+        <section class="s-pageheader pageheader">
+            <div class="row">
+                <div class="column xl-12">
+                    <h1 class="page-title">
+                        <span class="page-title__small-type text-pretitle">In the works</span>
+                        Nario & Debes
+                    </h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="s-pagecontent pagecontent">
+            <div class="grid-container">
+                <!-- First 3 blog cards in a row -->
+                <div class="grid-row">
+                    <div class="grid-item">
+                        <div class="blog-card">
+                            <h3 class="blog-card__title">What is Nario&Debes?</h3>
+                            <div class="blog-card__text">
+                                <p>Nario&Debes is an upcoming open world game being developed by me and two other people, during our free time. Set foot in the realm of Firecrest taking the role of Nario, our brave and bold protagonist, as you uncover the secrets of this mysterious island in search of the mighty dragon Debes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="blog-card">
+                            <h3 class="blog-card__title">Why make a videogame?</h3>
+                            <div class="blog-card__text">
+                                <p>If there is something that everyone involved in this project can share, is our passion for videogames. As gamers we know the joy and entertainment we can bring to players, as well as the business opportunities it can provide. The biggest reason for this however, is for our personal growth. Problem solving while doing something we love could never be better!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="blog-card">
+                            <h3 class="blog-card__title">How are we making it?</h3>
+                            <div class="blog-card__text">
+                                <p>Our game is being developed in Unreal Engine 5, known for its high-fidelity graphics, high performance capabilities, easy access and so on. For our 3D models, we are using Blender, which allows us to create our characters, detailed environments and realistic animations that we can integrate seamlessly into UE 5.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Next 2 blog cards in a centered row -->
+                <div class="grid-row centered">
+                    <div class="grid-item">
+                        <div class="blog-card">
+                            <div class="blog-card__header">
+                                <div class="blog-card__cat-links">
+                                    <a href="blog.html">Productivity</a>
                                 </div>
-                </div> <!-- end blog-card -->
-        <div class="grid-full grid-list-items list-items show-ctr">
-            <div class="grid-list-items__item list-items__item">
-             <div class="grid-items__item-header">
-              <h3 class="blog-card__title">Why make a videogame?</a></h3>
-                  </div>
-               <div class="blog-card__text">
-                <p>
-                    <br/>
-            If there is something that everyone involved in this project can share, is our passion for
-            videogames. As gamers we know the joy and entertainment we can bring to players, as well as the business opportunities it can provide.
-            The biggest reason for this however, is for our personal growth. Problem solving while doing something we love could never be better!
-              </p>
-               </div>
-                </div> <!-- end blog-card -->
-       <div class="grid-full grid-list-items list-items show-ctr">
-            <div class="grid-list-items__item list-items__item">
-             <div class="grid-items__item-header">
-              <h3 class="blog-card__title">How are we making it?</a></h3>
-              </div>
-               <div class="blog-card__text">
-                 <p>
-                Our game is being developed in Unreal Engine 5, known for its high-fidelity graphics, high performance
-                capabilities, easy access and so on. For our 3D models, we are using Blender, which allows us to create
-                our characters, detailed environments and realistic animations that we can integrate seamlessly into UE 5.
-                 </p>
-                  </div>
-                    </div> <!-- end blog card -->
-                                    <div class="grid-list-items__item blog-card">
-                                        <div class="blog-card__header">
-                                            <div class="blog-card__cat-links">
-                                                <a href="blog.html">Productivity</a>
-                                            </div>
-                                            <h3 class="blog-card__title"><a href="single.html">The Advantages of Hiring a Consultant Rather Than An Employee Or An Agency</a></h3>
-                                        </div>
-                                        <div class="blog-card__text">
-                                            <p>
-                                            Rerum quam quos. Quibusdam quis autem voluptatibus earum vel ex error ea magni. Aut asperiores 
-                                            sit mollitia. Rem neque et voluptatem eos quia sed eligendi et. Eaque velit eligendi ut 
-                                            magnam. Cumque ducimus laborum doloribus facere maxime vel earum quidem enim suscipit.
-                                            </p>
-                                        </div>
-                                    </div> <!-- end blog-card -->
-                                    <div class="grid-list-items__item blog-card">
-                                        <div class="blog-card__header">
-                                            <div class="blog-card__cat-links">
-                                                <a href="blog.html">Productivity</a>
-                                            </div>
-                                            <h3 class="blog-card__title"><a href="single.html">5 Marketing Productivity Apps for Your Team</a></h3>
-                                        </div>
-                                        <div class="blog-card__text">
-                                            <p>
-                                            Rerum quam quos. Quibusdam quis autem voluptatibus earum vel ex error ea magni. Aut asperiores 
-                                            sit mollitia. Rem neque et voluptatem eos quia sed eligendi et. Eaque velit eligendi ut 
-                                            magnam. Cumque ducimus laborum doloribus facere maxime vel earum quidem enim suscipit.
-                                            </p>
-                                        </div>
-                                    </div> <!-- end blog-card -->
-                                    <div class="grid-list-items__item blog-card">
-                                        <div class="blog-card__header">
-                                            <div class="blog-card__cat-links">
-                                                <a href="blog.html">Marketing</a>
-                                            </div>
-                                            <h3 class="blog-card__title"><a href="single.html">How to Determine the Reach of Your Campaign</a></h3>
-                                        </div>
-                                        <div class="blog-card__text">
-                                            <p>
-                                            Quibusdam quis autem voluptatibus earum vel ex error ea magni. Rerum quam quos. Aut asperiores 
-                                            sit mollitia. Rem neque et voluptatem eos quia sed eligendi et. Eaque velit eligendi ut 
-                                            magnam. Cumque ducimus laborum doloribus facere maxime vel earum quidem enim suscipit.
-                                            </p>
-                                        </div>
-                                    </div> <!-- end blog-card -->
-                                    <div class="grid-list-items__item blog-card">
-                                        <div class="blog-card__header">
-                                            <div class="blog-card__cat-links">
-                                                <a href="blog.html">SEO</a>
-                                            </div>
-                                            <h3 class="blog-card__title"><a href="single.html">The Complete Guide to Redirects</a></h3>
-                                        </div>
-                                        <div class="blog-card__text">
-                                            <p>
-                                            Eaque velit eligendi ut magnam.Quibusdam quis autem voluptatibus earum vel 
-                                            ex error ea magni. Rerum quam quos. Aut asperiores sit mollitia. Rem neque et 
-                                            voluptatem eos quia sed eligendi et. Cumque ducimus laborum doloribus facere maxime 
-                                            vel earum quidem enim suscipit.
-                                            </p>
-                                        </div>
-                                    </div> <!-- end blog card -->
-                                    <div class="grid-list-items__item blog-card">
-                                        <div class="blog-card__header">
-                                            <div class="blog-card__cat-links">
-                                                <a href="blog.html">SEO</a>
-                                            </div>
-                                            <h3 class="blog-card__title"><a href="single.html">What Backlinks Are & Why They Are Important for SEO</a></h3>
-                                        </div>
-                                        <div class="blog-card__text">
-                                            <p>
-                                            Quibusdam quis autem voluptatibus earum vel ex error ea magni. Rerum quam quos. Aut asperiores 
-                                            sit mollitia. Rem neque et voluptatem eos quia sed eligendi et. Eaque velit eligendi ut 
-                                            magnam. Cumque ducimus laborum doloribus facere maxime vel earum quidem enim suscipit.
-                                            </p>
-                                        </div>
+                                <h3 class="blog-card__title"><a href="single.html">The Advantages of Hiring a Consultant Rather Than An Employee Or An Agency</a></h3>
+                            </div>
+                            <div class="blog-card__text">
+                                <p>Rerum quam quos. Quibusdam quis autem voluptatibus earum vel ex error ea magni. Aut asperiores sit mollitia. Rem neque et voluptatem eos quia sed eligendi et. Eaque velit eligendi ut magnam. Cumque ducimus laborum doloribus facere maxime vel earum quidem enim suscipit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="blog-card">
+                            <div class="blog-card__header">
+                                <div class="blog-card__cat-links">
+                                    <a href="blog.html">Productivity</a>
+                                </div>
+                                <h3 class="blog-card__title"><a href="single.html">5 Marketing Productivity Apps for Your Team</a></h3>
+                            </div>
+                            <div class="blog-card__text">
+                                <p>Rerum quam quos. Quibusdam quis autem voluptatibus earum vel ex error ea magni. Aut asperiores sit mollitia. Rem neque et voluptatem eos quia sed eligendi et. Eaque velit eligendi ut magnam. Cumque ducimus laborum doloribus facere maxime vel earum quidem enim suscipit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Last 3 blog cards in a row -->
+                <div class="grid-row">
+                    <div class="grid-item">
+                        <div class="blog-card">
+                            <div class="blog-card__header">
+                                <div class="blog-card__cat-links">
+                                    <a href="blog.html">Marketing</a>
+                                </div>
+                                <h3 class="blog-card__title"><a href="single.html">How to Determine the Reach of Your Campaign</a></h3>
+                            </div>
+                            <div class="blog-card__text">
+                                <p>Quibusdam quis autem voluptatibus earum vel ex error ea magni. Rerum quam quos. Aut asperiores sit mollitia. Rem neque et voluptatem eos quia sed eligendi et. Eaque velit eligendi ut magnam. Cumque ducimus laborum doloribus facere maxime vel earum quidem enim suscipit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="blog-card">
+                            <div class="blog-card__header">
+                                <div class="blog-card__cat-links">
+                                    <a href="blog.html">SEO</a>
+                                </div>
+                                <h3 class="blog-card__title"><a href="single.html">The Complete Guide to Redirects</a></h3>
+                            </div>
+                            <div class="blog-card__text">
+                                <p>Eaque velit eligendi ut magnam. Quibusdam quis autem voluptatibus earum vel ex error ea magni. Rerum quam quos. Aut asperiores sit mollitia. Rem neque et voluptatem eos quia sed eligendi et. Cumque ducimus laborum doloribus facere maxime vel earum quidem enim suscipit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="blog-card">
+                            <div class="blog-card__header">
+                                <div class="blog-card__cat-links">
+                                    <a href="blog.html">SEO</a>
+                                </div>
+                                <h3 class="blog-card__title"><a href="single.html">What Backlinks Are & Why They Are Important for SEO</a></h3>
+                            </div>
+                            <div class="blog-card__text">
+                                <p>Quibusdam quis autem voluptatibus earum vel ex error ea magni. Rerum quam quos. Aut asperiores sit mollitia. Rem neque et voluptatem eos quia sed eligendi et. Eaque velit eligendi ut magnam. Cumque ducimus laborum doloribus facere maxime vel earum quidem enim suscipit.</p>
+                            </div>
                                     </div> <!-- end blog-card -->
                                 </div> <!-- grid-list-items -->
                             <!-- </div>     -->
