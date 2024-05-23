@@ -182,7 +182,7 @@
 
             <!-- clients
             ----------------------------------------------- -->
-            <section id="clients" class="s-clients">          
+           <section id="clients" class="s-clients">          
 
     <div class="row s-clients__content-block width-sixteen-col">
         <div class="column xl-12 grid-block grid-section-split">
@@ -195,10 +195,9 @@
         
             <div class="grid-section-split__primary" style="text-align: center;">
                 <div class="button-container">
-                    <button class="btn">Button 1</button>
-                    <button class="btn">Button 2</button>
-                        <button class="btn">Button 3</button>
-                    </div>
+                    <a href="https://example.com/page1" class="btn btn-large">Button 1</a>
+                    <a href="https://example.com/page2" class="btn btn-large">Button 2</a>
+                    <a href="https://example.com/page3" class="btn btn-large">Button 3</a>
                 </div>
             </div> <!-- end grid-section-split__primary -->
         
@@ -214,40 +213,28 @@
     }
 
     .button-container .btn {
-        margin: 5px;
-        padding: 10px 20px;
+        margin: 10px 0; /* Increased space between buttons */
+        padding: 15px 40px; /* Larger padding for bigger buttons */
         background-color: #007BFF;
         color: white;
         border: none;
         border-radius: 5px;
         cursor: pointer;
+        width: 100%; /* Make buttons take full width */
+        max-width: 200px; /* Limit maximum width */
+        text-decoration: none; /* Remove default underline */
+        display: inline-block; /* Ensure buttons are displayed inline */
+        text-align: center; /* Center text horizontally */
     }
 
     .button-container .btn:hover {
         background-color: #0056b3;
     }
 
-    .button-container > :first-child, .button-container > :nth-child(2) {
-        display: inline-block;
-        margin-right: 10px;
-    }
-
-    .btn-single {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        margin-top: 10px;
-    }
-
     .section-header h2 {
         margin-bottom: 20px;
     }
-
-    .grid-section-split__primary p {
-        max-width: 800px;
-        margin: 0 auto;
-    }
-</style>           
+</style>
 
         <!-- # cta
         ================================================== -->
