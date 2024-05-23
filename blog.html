@@ -96,7 +96,7 @@
                         </div>
                     </div>
                </section>   
-<style>
+ <style>
         .grid-container {
             display: flex;
             flex-direction: column;
@@ -112,6 +112,7 @@
 
         .grid-row.centered {
             justify-content: center;
+            max-width: 60%; /* Set a maximum width for the centered row */
         }
 
         .grid-item {
@@ -145,113 +146,112 @@
 
             .grid-row.centered {
                 justify-content: center;
+                max-width: 100%; /* Ensure centered row does not exceed screen width */
             }
         }
     </style>
 </head>
 <body>
-        <section class="s-pagecontent pagecontent">
-            <div class="grid-container">
-                <!-- First 3 blog cards in a row -->
-                <div class="grid-row">
-                    <div class="grid-item">
-                        <div class="blog-card">
-                            <h3 class="blog-card__title">What is Nario&Debes?</h3>
-                            <div class="blog-card__text">
-                                <p>Nario&Debes is an upcoming open world game being developed by me and two other people, during our free time. Set foot in the realm of Firecrest taking the role of Nario, our brave and bold protagonist, as you uncover the secrets of this mysterious island in search of the mighty dragon Debes.</p>
-                            </div>
+    <section class="s-pagecontent pagecontent">
+        <div class="grid-container">
+            <!-- First 3 blog cards in a row -->
+            <div class="grid-row">
+                <div class="grid-item">
+                    <div class="blog-card">
+                        <h3 class="blog-card__title">What is Nario&Debes?</h3>
+                        <div class="blog-card__text">
+                            <p>Nario&Debes is an upcoming open world game being developed by me and two other people, during our free time. Set foot in the realm of Firecrest taking the role of Nario, our brave and bold protagonist, as you uncover the secrets of this mysterious island in search of the mighty dragon Debes.</p>
                         </div>
                     </div>
-                    <div class="grid-item">
-                        <div class="blog-card">
-                            <h3 class="blog-card__title">Why make a videogame?</h3>
-                            <div class="blog-card__text">
-                                <p>If there is something that everyone involved in this project can share, is our passion for videogames. As gamers we know the joy and entertainment we can bring to players, as well as the business opportunities it can provide. The biggest reason for this however, is for our personal growth. Problem solving while doing something we love could never be better!</p>
-                            </div>
+                </div>
+                <div class="grid-item">
+                    <div class="blog-card">
+                        <h3 class="blog-card__title">Why make a videogame?</h3>
+                        <div class="blog-card__text">
+                            <p>If there is something that everyone involved in this project can share, is our passion for videogames. As gamers we know the joy and entertainment we can bring to players, as well as the business opportunities it can provide. The biggest reason for this however, is for our personal growth. Problem solving while doing something we love could never be better!</p>
                         </div>
                     </div>
-                    <div class="grid-item">
-                        <div class="blog-card">
-                            <h3 class="blog-card__title">How are we making it?</h3>
-                            <div class="blog-card__text">
-                                <p>Our game is being developed in Unreal Engine 5, known for its high-fidelity graphics, high performance capabilities, easy access and so on. For our 3D models, we are using Blender, which allows us to create our characters, detailed environments and realistic animations that we can integrate seamlessly into UE 5.</p>
-                            </div>
+                </div>
+                <div class="grid-item">
+                    <div class="blog-card">
+                        <h3 class="blog-card__title">How are we making it?</h3>
+                        <div class="blog-card__text">
+                            <p>Our game is being developed in Unreal Engine 5, known for its high-fidelity graphics, high performance capabilities, easy access and so on. For our 3D models, we are using Blender, which allows us to create our characters, detailed environments and realistic animations that we can integrate seamlessly into UE 5.</p>
                         </div>
                     </div>
-                    
-                <!-- Next 2 blog cards in a centered row -->
-                <div class="grid-row centered">
-                    <div class="grid-item">
-                        <div class="blog-card">
-                            <div class="blog-card__header">
-                                <div class="blog-card__cat-links">
-                                    <img src="Unreal_Engine-Logo.wine.svg" alt="UnrealEngine5" style="width: 30%; height: auto;">
-                                    <div>
+                </div>
+            </div>
+
+            <!-- Next 2 blog cards in a centered row -->
+            <div class="grid-row centered">
+                <div class="grid-item">
+                    <div class="blog-card">
+                        <div class="blog-card__header">
+                            <div class="blog-card__cat-links">
+                                <img src="Unreal_Engine-Logo.wine.svg" alt="UnrealEngine5" style="width: 30%; height: auto;">
+                                <div>
                                     <a href="blog.html">Productivity</a>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                        
-                    <div class="grid-item">
-                        <div class="blog-card">
-                            <div class="blog-card__header">
-                                <div class="blog-card__cat-links">
-                                    <img src="blender_logo.png" alt="Blender" style="width: 30%; height: auto;">
-                                    <div>
-                                    <a href="blog.html">Productivity</a>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Last 3 blog cards in a row -->
-                <div class="grid-row">
-                    <div class="grid-item">
-                        <div class="blog-card">
-                            <div class="blog-card__header">
-                                <div class="blog-card__cat-links">
-                                    <a href="blog.html">Marketing</a>
+                <div class="grid-item">
+                    <div class="blog-card">
+                        <div class="blog-card__header">
+                            <div class="blog-card__cat-links">
+                                <img src="blender_logo.png" alt="Blender" style="width: 30%; height: auto;">
+                                <div>
+                                    <a href="blog.html">Productivity</a>
                                 </div>
-                                <h3 class="blog-card__title"><a href="single.html">How to Determine the Reach of Your Campaign</a></h3>
-                            </div>
-                            <div class="blog-card__text">
-                                <p>Quibusdam quis autem voluptatibus earum vel ex error ea magni. Rerum quam quos. Aut asperiores sit mollitia. Rem neque et voluptatem eos quia sed eligendi et. Eaque velit eligendi ut magnam. Cumque ducimus laborum doloribus facere maxime vel earum quidem enim suscipit.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="grid-item">
-                        <div class="blog-card">
-                            <div class="blog-card__header">
-                                <div class="blog-card__cat-links">
-                                    <a href="blog.html">SEO</a>
-                                </div>
-                                <h3 class="blog-card__title"><a href="single.html">The Complete Guide to Redirects</a></h3>
+                </div>
+            </div>
+
+            <!-- Last 3 blog cards in a row -->
+            <div class="grid-row">
+                <div class="grid-item">
+                    <div class="blog-card">
+                        <div class="blog-card__header">
+                            <div class="blog-card__cat-links">
+                                <a href="blog.html">Marketing</a>
                             </div>
-                            <div class="blog-card__text">
-                                <p>Eaque velit eligendi ut magnam. Quibusdam quis autem voluptatibus earum vel ex error ea magni. Rerum quam quos. Aut asperiores sit mollitia. Rem neque et voluptatem eos quia sed eligendi et. Cumque ducimus laborum doloribus facere maxime vel earum quidem enim suscipit.</p>
-                            </div>
+                            <h3 class="blog-card__title"><a href="single.html">How to Determine the Reach of Your Campaign</a></h3>
+                        </div>
+                        <div class="blog-card__text">
+                            <p>Quibusdam quis autem voluptatibus earum vel ex error ea magni. Rerum quam quos. Aut asperiores sit mollitia. Rem neque et voluptatem eos quia sed eligendi et. Eaque velit eligendi ut magnam. Cumque ducimus laborum doloribus facere maxime vel earum quidem enim suscipit.</p>
                         </div>
                     </div>
-                    <div class="grid-item">
-                        <div class="blog-card">
-                            <div class="blog-card__header">
-                                <div class="blog-card__cat-links">
-                                    <a href="blog.html">SEO</a>
-                                </div>
-                                <h3 class="blog-card__title"><a href="single.html">What Backlinks Are & Why They Are Important for SEO</a></h3>
+                </div>
+                <div class="grid-item">
+                    <div class="blog-card">
+                        <div class="blog-card__header">
+                            <div class="blog-card__cat-links">
+                                <a href="blog.html">SEO</a>
                             </div>
-                            <div class="blog-card__text">
-                                <p>Quibusdam quis autem voluptatibus earum vel ex error ea magni. Rerum quam quos. Aut asperiores sit mollitia. Rem neque et voluptatem eos quia sed eligendi et. Eaque velit eligendi ut magnam. Cumque ducimus laborum doloribus facere maxime vel earum quidem enim suscipit.</p>
+                            <h3 class="blog-card__title"><a href="single.html">The Complete Guide to Redirects</a></h3>
+                        </div>
+                        <div class="blog-card__text">
+                            <p>Eaque velit eligendi ut magnam. Quibusdam quis autem voluptatibus earum vel ex error ea magni. Rerum quam quos. Aut asperiores sit mollitia. Rem neque et voluptatem eos quia sed eligendi et. Cumque ducimus laborum doloribus facere maxime vel earum quidem enim suscipit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="blog-card">
+                        <div class="blog-card__header">
+                            <div class="blog-card__cat-links">
+                                <a href="blog.html">SEO</a>
                             </div>
-                                    </div> <!-- end blog-card -->
-                                </div> <!-- grid-list-items -->
-                            <!-- </div>     -->
-
-                        </div> <!-- end grid-block-->
-                    </div> <!-- end row -->
-               </section>
-
+                            <h3 class="blog-card__title"><a href="single.html">What Backlinks Are & Why They Are Important for SEO</a></h3>
+                        </div>
+                        <div class="blog-card__text">
+                            <p>Quibusdam quis autem voluptatibus earum vel ex error ea magni. Rerum quam quos. Aut asperiores sit mollitia. Rem neque et voluptatem eos quia sed eligendi et. Eaque velit eligendi ut magnam. Cumque ducimus laborum doloribus facere maxime vel earum quidem enim suscipit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
                   </section> <!-- pagecontent -->
 
               <section class="s-testimonials">
